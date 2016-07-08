@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  auto_gate: one
+  plate_number: MyString
+  owner: MyString
+  phone: MyString
+
+two:
+  auto_gate: two
+  plate_number: MyString
+  owner: MyString
+  phone: MyString

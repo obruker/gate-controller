@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Auto Gates</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Open code</th>
+      <th>Shared secret</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @auto_gates.each do |auto_gate| %>
+      <tr>
+        <td><%= auto_gate.name %></td>
+        <td><%= auto_gate.open_code %></td>
+        <td><%= auto_gate.shared_secret %></td>
+        <td><%= link_to 'Show', auto_gate %></td>
+        <td><%= link_to 'Edit', edit_auto_gate_path(auto_gate) %></td>
+        <td><%= link_to 'Destroy', auto_gate, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Auto Gate', new_auto_gate_path %>

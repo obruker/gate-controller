@@ -1,0 +1,32 @@
+<%= form_for(auto_gate) do |f| %>
+  <% if auto_gate.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(auto_gate.errors.count, "error") %> prohibited this auto_gate from being saved:</h2>
+
+      <ul>
+      <% auto_gate.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :open_code %>
+    <%= f.text_area :open_code %>
+  </div>
+
+  <div class="field">
+    <%= f.label :shared_secret %>
+    <%= f.text_field :shared_secret %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

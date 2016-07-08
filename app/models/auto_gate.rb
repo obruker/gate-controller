@@ -1,0 +1,2 @@
+class AutoGate < ApplicationRecord
+end
