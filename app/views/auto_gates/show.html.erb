@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @auto_gate.name %>
+</p>
+
+<p>
+  <strong>Open code:</strong>
+  <%= @auto_gate.open_code %>
+</p>
+
+<p>
+  <strong>Shared secret:</strong>
+  <%= @auto_gate.shared_secret %>
+</p>
+
+<%= link_to 'Edit', edit_auto_gate_path(@auto_gate) %> |
+<%= link_to 'Back', auto_gates_path %>

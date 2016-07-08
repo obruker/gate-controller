@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Auto gate:</strong>
+  <%= @vehicle.auto_gate %>
+</p>
+
+<p>
+  <strong>Plate number:</strong>
+  <%= @vehicle.plate_number %>
+</p>
+
+<p>
+  <strong>Owner:</strong>
+  <%= @vehicle.owner %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @vehicle.phone %>
+</p>
+
+<%= link_to 'Edit', edit_vehicle_path(@vehicle) %> |
+<%= link_to 'Back', vehicles_path %>
