@@ -16,7 +16,7 @@
   <tbody>
     <% @vehicles.each do |vehicle| %>
       <tr>
-        <td><%= vehicle.auto_gate %></td>
+        <td><%= vehicle.auto_gate.name %></td>
         <td><%= vehicle.plate_number %></td>
         <td><%= vehicle.owner %></td>
         <td><%= vehicle.phone %></td>
