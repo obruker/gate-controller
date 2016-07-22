@@ -14,7 +14,7 @@
   <tbody>
     <% @photos.each do |photo| %>
       <tr>
-        <td><%= photo.data %></td>
+        <!--<td><%= photo.data %></td>-->
         <td><%= photo.time %></td>
         <td><%= link_to 'Show', photo %></td>
         <td><%= link_to 'Edit', edit_photo_path(photo) %></td>
