@@ -7,6 +7,8 @@
     <tr>
       <th>Data</th>
       <th>Time</th>
+      <th>Plate number</th>
+      <th>Detection score</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,6 +18,8 @@
       <tr>
         <td><%= ('<img src="data:image/jpg;base64,%s" style="width:128px; height:96px;">' % Base64.encode64(photo.data)).html_safe %></td>
         <td><%= photo.time %></td>
+        <td><%= photo.plate_number %></td>
+        <td><%= photo.detection_score %></td>
         <td><%= link_to 'Show', photo %></td>
         <td><%= link_to 'Edit', edit_photo_path(photo) %></td>
         <td><%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %></td>

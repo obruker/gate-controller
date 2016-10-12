@@ -21,6 +21,16 @@
     <%= f.datetime_select :time %>
   </div>
 
+  <div class="field">
+    <%= f.label :plate_number %>
+    <%= f.text_field :plate_number %>
+  </div>
+
+  <div class="field">
+    <%= f.label :detection_score %>
+    <%= f.text_area :detection_score %>
+  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

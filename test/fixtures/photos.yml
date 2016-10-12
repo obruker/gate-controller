@@ -2,8 +2,12 @@
 
 one:
   data: 
-  time: 2016-07-23 13:30:05
+  time: 2016-10-12 17:45:22
+  plate_number: MyString
+  detection_score: MyText
 
 two:
   data: 
-  time: 2016-07-23 13:30:05
+  time: 2016-10-12 17:45:22
+  plate_number: MyString
+  detection_score: MyText

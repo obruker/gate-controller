@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160723103005) do
+ActiveRecord::Schema.define(version: 20161012105316) do
 
   create_table "auto_gates", force: :cascade do |t|
     t.string   "name"
@@ -23,8 +23,10 @@ ActiveRecord::Schema.define(version: 20160723103005) do
   create_table "photos", force: :cascade do |t|
     t.binary   "data"
     t.datetime "time"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.string   "plate_number"
+    t.text     "detection_score"
   end
 
   create_table "vehicles", force: :cascade do |t|

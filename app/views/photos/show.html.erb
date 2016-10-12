@@ -10,5 +10,15 @@
   <%= @photo.time %>
 </p>
 
+<p>
+  <strong>Plate number:</strong>
+  <%= @photo.plate_number %>
+</p>
+
+<p>
+  <strong>Detection score:</strong>
+  <%= @photo.detection_score %>
+</p>
+
 <%= link_to 'Edit', edit_photo_path(@photo) %> |
 <%= link_to 'Back', photos_path %>
